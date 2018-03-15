@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta id="viewport" name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <style>
+        body{
+            height: auto;overflow: scroll-y;
+        }
+        .am-textarea-control textarea{
+            width: 100%;border: 1px solid #eee;
+        }
+        #one{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div style="height: 600px;background: red;" id="one" ></div>
+
+    <div class="am-textarea-control">
+        <textarea maxlength="100" placeholder="留言(商户无法查看)" rows="3"></textarea>
+    </div>
+    <div style="height: 200px;background: red;" id="two"></div>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $('#two').on('click',function () {
+            $('#one').css('display','block')
+        })
+    </script>
+</body>
+</html>
